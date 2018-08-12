@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/miikka/clj-sem-rel-test/compare/v1.0.1...v1.0.2) (2018-08-12)
+
+
+### Bug Fixes
+
+* Use lein change version set ([b2487af](https://github.com/miikka/clj-sem-rel-test/commit/b2487af))
+
 # Changelog
 
 
