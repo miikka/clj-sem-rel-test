@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/clojure:lein-2.8.1
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-{{checksum "project.clj"}}
+      - run: lein test
+      - save_cache:
+          key: v1-{{checksum "project.clj"}}
+          paths:
+            - ~/.m2
+
+  release:
+    docker:
+      - image: circleci/clojure:lein-2.8.1
+    steps:
+      - checkout
+      - run: npx semantic-release@15
+
+workflows:
+  version: 2
+  test_and_release:
+    jobs:
+      - test
+      - release:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - master
