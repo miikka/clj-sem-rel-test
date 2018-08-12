@@ -1,0 +1,10 @@
+---
+verifyConditions:
+  - "@semantic-release/git"
+  - "@semantic-release/changelog"
+prepare:
+  - "@semantic-release/git"
+  - "@semantic-release/changelog"
+  - { path: "@semantic-release/exec", cmd: "lein set-version ${nextRelease.version}" } 
+publish:
+  - { path: "@semantic-release/exec", cmd: "lein deploy clojars" }
