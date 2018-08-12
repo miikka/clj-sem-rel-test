@@ -5,7 +5,7 @@ verifyConditions:
 prepare:
   - "@semantic-release/changelog"
   - { path: "@semantic-release/exec", cmd: "lein change version set '\"${nextRelease.version}\"'" } 
-  - "@semantic-release/git"
+  - { path: "@semantic-release/git",  assets: ["CHANGELOG.md", "project.clj"] }
 publish:
   - { path: "@semantic-release/exec", cmd: "lein deploy clojars" }
 success: []
