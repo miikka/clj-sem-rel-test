@@ -18,6 +18,15 @@ jobs:
       - image: circleci/clojure:lein-2.8.1-node
     steps:
       - checkout
+      - restore_cache:
+          key: v1-{{checksum "project.clj"}}
+      - run: |
+          git config user.email "miikka.koskinen+ci@iki.fi"
+          git config user.name  "Build automation"
+      - run: |
+          ./scripts/decrypt-secrets.sh "$SECRETS_PASSPHRASE"
+          gpg --import secrets/signing-key.asc
+          mkdir -p ~/.lein && cp secrets/profiles.clj ~/.lein/
       - add_ssh_keys:
           fingerprints:
             - "37:eb:61:ba:1c:54:99:96:a3:c0:c2:3f:a4:cb:49:f8"
