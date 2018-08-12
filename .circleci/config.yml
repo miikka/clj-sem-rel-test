@@ -31,7 +31,7 @@ jobs:
           fingerprints:
             - "37:eb:61:ba:1c:54:99:96:a3:c0:c2:3f:a4:cb:49:f8"
       - run: npm install
-      - run: npx semantic-release@15
+      - run: ./node_modules/.bin/semantic-release
 
 workflows:
   version: 2
