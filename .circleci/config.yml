@@ -29,7 +29,7 @@ jobs:
           mkdir -p ~/.lein && cp secrets/profiles.clj ~/.lein/
       - add_ssh_keys:
           fingerprints:
-            - "37:eb:61:ba:1c:54:99:96:a3:c0:c2:3f:a4:cb:49:f8"
+            - "4c:ad:91:8f:3d:1f:27:44:73:1a:ce:ad:18:d2:5e:46"
       - run: npm install
       - run: ./node_modules/.bin/semantic-release
 
