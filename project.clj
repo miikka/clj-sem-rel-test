@@ -1,4 +1,4 @@
-(defproject org.clojars.oispa/clj-sem-rel-test "1.1.0"
+(defproject org.clojars.oispa/clj-sem-rel-test "1.1.1"
   :description "Experiment with semantic-release"
   :url "https://github.com/miikka/clj-sem-rel-test"
   :license {:name "Eclipse Public License"

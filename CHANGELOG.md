@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/miikka/clj-sem-rel-test/compare/v1.1.0...v1.1.1) (2020-11-24)
+
+
+### Bug Fixes
+
+* Clean up changelog formatting ([e42e4a7](https://github.com/miikka/clj-sem-rel-test/commit/e42e4a79c1d01ab394f7b47426579c45eac890d0))
+
 ## [1.1.0](https://github.com/miikka/clj-sem-rel-test/compare/v1.0.2...v1.1.0) (2018-08-12)
 
 
