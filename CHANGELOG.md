@@ -1,4 +1,4 @@
-# [1.1.0](https://github.com/miikka/clj-sem-rel-test/compare/v1.0.2...v1.1.0) (2018-08-12)
+## [1.1.0](https://github.com/miikka/clj-sem-rel-test/compare/v1.0.2...v1.1.0) (2018-08-12)
 
 
 ### Features
@@ -11,9 +11,6 @@
 ### Bug Fixes
 
 * Use lein change version set ([b2487af](https://github.com/miikka/clj-sem-rel-test/commit/b2487af))
-
-# Changelog
-
 
 ## [1.0.1](https://github.com/miikka/clj-sem-rel-test/compare/v1.0.0...v1.0.1) (2018-08-12)
 
